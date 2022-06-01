@@ -1,12 +1,16 @@
 import "./App.css";
 import LogIn from "./componets/LogIn";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <h1>Projekt</h1>
-    </div>
+    <Router>
+      <div>
+        <LogIn />
+        <Routes>
+          <Route> </Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
-
 export default App;
